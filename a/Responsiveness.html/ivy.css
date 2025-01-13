@@ -1,0 +1,24 @@
+*, *::after *::before{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+
+.title{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  align-items: center;
+  column-gap: 1.6rem;
+}
+
+
+
+
+.title ::before, .title ::after{
+  content: "";
+  height: 2px;
+  display: block;
+  background-color: black;
+  position: absolute;
+}
